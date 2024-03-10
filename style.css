@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  padding: 20px 40px;
+  box-shadow: 0 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 48px;
+  margin: 40px;
+}
+
+.card {
+  box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  text-decoration: none;
+  color: black;
+}
+
+.card img {
+  box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 170px;
+  /* height: 200px; */
+  object-fit: cover;
+}
+
+.country-details {
+  padding: 16px;
+}
+
+.country-details h3 {
+  margin-bottom: 8px;
+}
+
+.country-detail-container {
+  padding: 40px;
+}
+
+.back-btn {
+  box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 4px 24px;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.country-container {
+  margin-top: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  font-size: 18px;
+}
+
+.country-container img {
+  box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+}
+
+.country-details h3 {
+  font-size: 28px;
+  margin-bottom: 32px;
+}
+
+.first-second {
+  display: flex;
+  gap: 32px;
+}
+
+.first {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.second {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.border-countries {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+.border-countries a {
+  margin: 8px;
+  padding: 4px 16px;
+  box-shadow: 0 0 4px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (max-width: 1200px) {
+  header {
+    font-size: 12px;
+    padding: 16px 24px;
+  }
+
+  .country-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .first-second {
+    flex-direction: column;
+  }
+
+  .country-container img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .country-detail-container {
+    padding: 24px;
+  }
+
+  .country-container {
+    margin-top: 32px;
+    gap: 16px;
+  }
+
+  .country-details h3 {
+    margin-bottom: 16px;
+    font-size: 24px;
+  }
+}
