@@ -6,21 +6,76 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-/* 
+
 body {
-  background-color: hsl(207, 26%, 17%);
-  color: #fff;
-} */
+  --background-color: white;
+  --text-color: black;
+  --elements-color: white;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+body.dark {
+  --background-color: hsl(207, 26%, 17%);
+  --text-color: white;
+  --elements-color: hsl(209, 23%, 22%);
+}
 
 header {
   padding: 20px 40px;
   box-shadow: 0 0 2px 3px rgba(0, 0, 0, 0.2);
+  background-color: var(--elements-color);
 }
 
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.header p {
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.search-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 24px auto;
+  max-width: 89%;
+}
+
+.search-container .input {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.1);
+  padding: 12px;
+  border-radius: 8px;
+  width: 250px;
+}
+
+.search-container .input input {
+  border: none;
+  outline: none;
+  width: 100%;
+  color: inherit;
+  background-color: inherit;
+}
+
+.search-container .filter-by-region {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.1);
+  color: inherit;
+  background-color: inherit;
+}
+
+.search-container .filter-by-region option {
+  color: var(--text-color);
+  background-color: var(--background-color);
 }
 
 .card-container {
@@ -38,6 +93,7 @@ header {
   overflow: hidden;
   text-decoration: none;
   color: black;
+  background-color: var(--elements-color);
 }
 
 .card img {
@@ -48,7 +104,8 @@ header {
 }
 
 .country-details {
-  padding: 16px 2px;
+  padding: 16px 12px;
+  color: var(--text-color);
 }
 
 .country-details h3 {
@@ -155,5 +212,14 @@ header {
   .country-details h3 {
     margin-bottom: 16px;
     font-size: 24px;
+  }
+
+  .search-container {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .search-container .filter-by-region {
+    width: 250px;
   }
 }

@@ -18,11 +18,31 @@
     <header>
       <div class="header">
         <h3>Where is in the world ?</h3>
-        <p><i class="fa-regular fa-moon"></i>&nbsp;Dark Mode</p>
+        <p class="theme-changer">
+          <i class="fa-regular fa-moon"></i>&nbsp;Dark Mode
+        </p>
       </div>
     </header>
 
     <main>
+      <div class="search-container">
+        <div class="input">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            id="input"
+            type="text"
+            placeholder="Search for a country....."
+          />
+        </div>
+        <select class="filter-by-region">
+          <option value="" hidden>Filter by Region</option>
+          <option value="Africa">Africa</option>
+          <option value="America">America</option>
+          <option value="Asia">Asia</option>
+          <option value="Europe">Europe</option>
+          <option value="Oceania">Oceania</option>
+        </select>
+      </div>
       <div class="card-container"></div>
     </main>
   </body>
